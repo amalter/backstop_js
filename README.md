@@ -22,5 +22,9 @@ You can clone and follow instructions below or start from scratch by following t
 - Create a feature branch in your project and make the changes
 - When you are done and ready to test run `backstop test` this will set up a new directory called `bitmaps_test/` in your `backstop_data/` directory and a new browser window will display the test results
 
+### Workflow
+- Always run `backstop reference` before starting work on a feature to get a "before" snapshot
+- Run `backstop test` after you've made changes in your project's feature branch to test changes and get "after" snapshot
+
 ### Additional notes
 - Backstop seems to only pick up on changes that impact layout shifts. For example, if making a change to border radius it doesn't call out any issues, but if you make changes to padding, margins, text size, etc. It will pick up on the layout shifts.
